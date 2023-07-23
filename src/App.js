@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RemainingBudget  from './components/Remaining';
 import Budget from './components/Budget';
 import ExpenseTotal from './components/ExpenseTotal';
-//import ExpenseItem from './components/ExpenseItem';
+import Currency from './components/Currency';
 
 
 
@@ -19,6 +19,7 @@ const App = () => {
                     <div className='row mt-3'>
                     <div className='col-sm'>
                         <Budget />
+                        <Currency />
                     </div>     
                     <div className='col-sm'>
                         <RemainingBudget  />
