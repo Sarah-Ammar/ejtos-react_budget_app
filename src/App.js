@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RemainingBudget  from './components/Remaining';
 import Budget from './components/Budget';
 import ExpenseTotal from './components/ExpenseTotal';
-import ExpenseItem from './components/ExpenseItem';
+//import ExpenseItem from './components/ExpenseItem';
 
 
 
