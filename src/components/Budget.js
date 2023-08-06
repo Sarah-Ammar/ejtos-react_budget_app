@@ -4,7 +4,7 @@ import ExpenseTotal from './ExpenseTotal';
 
 const Budget = () => {
     const [, setBudget] = useState(0);
-    const { remaining, expenses } = useContext(AppContext);
+    const { remaining, expenses, currency, dispatch } = useContext(AppContext);
     const totalExpenses = expenses.reduce((total, item) => {
         return (total += item.cost);
     }, 0);
@@ -28,7 +28,7 @@ const Budget = () => {
     return (
 
         <div className='alert alert-secondary'>
-            <label for="budget">Budget: £</label>
+            <label for="budget">Budget: {currency}</label>
             <input id="budget1" type="number" name="budget" min="0" max="20000" step="1000"
                 onChange={changeBudgetHandler}
             />
